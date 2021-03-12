@@ -1,0 +1,19 @@
+.actor-info{
+    z-index: 1;
+    width: 150px;
+    height:200px;
+    background-color: transparent;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    img{
+        width: 100px;
+        height: 150px;
+    }
+    .actor-name{
+        color:#fff
+    }
+
+    .actor-charname{
+        color:#fff
+    }
+}

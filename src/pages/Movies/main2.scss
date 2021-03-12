@@ -1,0 +1,111 @@
+.container{
+    overflow-x:hidden ;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    .movie-info-card{
+        .back-img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        .movie-info-title{
+            font-size: 4em;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            font-weight: bold;
+            color: rgb(41, 0, 49);
+        }
+        .movie-info-overview{
+            position: absolute;
+            top: 200px;
+            width: 600px;
+            font-weight: bold;
+            left: 50px;
+            color: #fff;
+        }
+        .vote{
+            position: relative;
+            top: 350px;
+            left: 50px;
+            display: flex;
+            .display{
+                padding: 10px 15px;
+                background-color: #f00;
+                color: #fff;
+                border-radius: 7px;
+                font-weight: bold;
+            }
+            button{
+                background-color: rgba(0, 81, 255, 0.541);
+                padding: 5px 10px;
+                margin: 0 5px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                color: #fff;
+                font-weight: bold;
+                z-index: 5;
+            }
+        }
+        .date{
+            display: flex;
+            position: absolute;
+            top: 430px;
+            left: 50px;
+            align-items: center;
+            .movie-info-date{
+                background-color: #000;
+                padding: 5px 10px;
+                border-radius: 10px;
+                color:#fff;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            .movie-info-budget{
+                padding: 5px 10px;
+                background-color: #000;
+                color:#ff0;
+                font-weight: bold;
+                border-radius: 10px;
+            }
+
+        }
+
+        .movie-info-vote{
+            position: absolute;
+            top: 470px;
+            z-index: 1;
+            background-color: #000;
+            color:#fff;
+            font-weight: bold;
+            padding: 5px 10px;
+            left: 50px;
+            border-radius: 10px;
+        }
+
+        .actors-list{
+            display: flex;
+            .actor-card{
+                display: flex;
+                width: 700px;
+                overflow-x: scroll;
+                margin-top: 500px;
+                margin-left: 50px;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .recomen-movie{
+        background-color: #000;
+        display: flex;
+        .wrapper-recomen{
+            display: flex;
+        }
+    }
+}
